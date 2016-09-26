@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>JavaScript数据类型</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/style.css" rel="stylesheet">
+
+
+    <script>
+        
+        /**
+         * javascript数据类型
+         *   5种基本数据类型：String Number Boolean Undefined Null
+         *   1种复杂数据类型：Object
+         */
+
+
+        /**
+         * Undefined
+         *   1.声明变量但是没有赋值
+         *   2.声明变量且显示赋值为undefined
+         */
+        var a;
+        var b = undefined;
+
+
+        /**
+         * Null：只有一个值为null，表示一个空对象指针。使用typeof操作符检测该类型数据，返回object
+         */
+        var c = null;
+
+
+        /**
+         * Boolean：有两个字面值，true和false
+         * 
+         * 其它类型的数据可通过Boolean(var)方法转换为Boolean类型
+         * 
+         * 1.String 空字符串表示false，其它为true
+         * 2.Number 0何NaN表示false，非零为true
+         * 3.Object null对象表示false，任何非空对象为true
+         * 4.Undefined undefined为false
+         * 
+         */
+        var d = true;
+        var e = "e";
+        if(Boolean(e)) {
+            console.log("变量d的非空，值为：" + e);
+        } else {
+            console.log("变量d为空字符串");
+        }
+
+
+        /**
+         * Number
+         *  1.整数
+         *  2.浮点数
+         */
+        var f = 123;
+        var g = 1.23;
+
+
+
+
+    </script>
+
+    <script>
+        
+        /**
+         * typeof 操作符，用于检测变量的数据类型
+         * 
+         * undefined string number boolean object funtion
+         * 
+         */
+
+        // 一般情况下，用于检测变量的数据类型
+        var name = "hello";
+        console.log(typeof name);
+
+    </script>
+
+
+    <script>
+        
+        // 返回undefined的情况
+        // 1 检测未声明的变量
+        console.log(typeof age);
+
+        // 2 声明但未赋值的变量
+        var num;
+        console.log(typeof num);
+
+        // 3 声明且显示赋值为undefined的变量
+        var address = undefined;
+        console.log(typeof address);
+
+    </script>
+
+    <script>
+        
+        // 返回string
+
+
+    </script>
+
+
+</head>
+
+<body>
+
+</body>
+
+</html>
