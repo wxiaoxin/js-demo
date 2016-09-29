@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="http://cdn.bootcss.com/bootstrap/4.0.0-alpha.3/css/bootstrap.min.css" rel="stylesheet">
+    <script src="location.js"></script>
+    <style>
+        button {
+            margin: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+<h2>生成浏览历史记录，可通过回退按钮回退</h2>
+
+<button class="btn btn-defalut" onclick="a()">location.assign("http://www.baidu.com")</button>
+
+<button class="btn btn-sm btn-warning" onclick="b()">window.location="http://www.jd.com"</button>
+
+<button class="btn btn-sm btn-info" onclick="c()">location.href="http://www.tmall.com"</button>
+
+
+<h2>不会生成浏览历史记录，不可以通过回退按钮回退</h2>
+
+<button class="btn btn-lg btn-danger" onclick="d()">location.replace("http://www.baidu.com")</button>
+
+
+
+<h4>重新加载页面</h4>
+
+<button class="btn btn-default" onclick="e()">location.reload()</button>
+
+<button class="btn btn-info" onclick="f()">location.reload(true)</button>
+</body>
+
+</html>

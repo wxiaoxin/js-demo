@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link href="http://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        .wrapper {
+            width: 600px;
+            margin: 20px auto;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div class="wrapper" id="main">
+
+        <form role="form" id="loginForm">
+
+            <div class="form-group">
+                <label for="name" id="nameLabel">用户名</label>
+                <input type="text" class="form-control" id="nameInput" placeholder="请输入用户名" data-xin="这是一个自定义的属性">
+            </div>
+
+            <div class="form-group">
+                <label>邮&nbsp;&nbsp;&nbsp;&nbsp;箱</label>
+                <input type="email" class="form-control" id="emailInput" placeholder="">
+            </div>
+
+            <div class="form-group">
+                <label for="">密&nbsp;&nbsp;&nbsp;&nbsp;码</label>
+                <input type="password" class="form-control" id="passwordInput" placeholder="">
+            </div>
+
+            <div class="checkbox">
+                <label>
+                    <input type="checkbox">记住我
+                </label>
+            </div>
+
+        </form>
+
+        <button class="btn btn-primary" type="submit" id="submitBtn">登陆</button>
+
+    </div>
+
+    <div class="wrapper">
+
+        <button class="btn btn-default" onclick="a()">追加子节点</button>
+
+        <button class="btn btn-primary" onclick="b()">插入子节点</button>
+
+        <button class="btn btn-success" onclick="c()">替换子节点</button>
+
+        <button class="btn btn-danger" onclick="d()">移除子节点</button>
+
+    </div>
+
+    <div class="wrapper">
+
+        <button class="btn btn-sm btn-warning" onclick="e()">e.classname=""</button>
+
+        <button class="btn btn-sm btn-info" onclick="f()">获取属性</button>
+
+        <button class="btn btn-sm btn-primary" onclick="g()">设置属性</button>
+
+        <button class="btn btn-sm btn-danger" onclick="h()">移除属性</button>
+
+    </div>
+
+    <script src="dom.js"></script>
+
+</body>
+
+</html>
